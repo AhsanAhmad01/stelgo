@@ -1,0 +1,158 @@
+/*______________________________ header___________________________________________ */
+
+*{
+    padding:0;
+    margin: 0;
+}
+header{
+
+    height: 79px;
+    width:100vw ;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+
+    
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation: go 4s infinite;
+ 
+ 
+   
+}
+
+.logo img{
+    height:3rem;
+
+  
+  
+}
+
+@keyframes go {
+    0%{color: rgb(237, 7, 7);}
+    50%{color: rgba(22, 255, 1, 0.792);}
+    75%{color: rgb(79, 173, 255);}
+    100%{color: rgb(255, 204, 2);}
+}
+
+
+
+
+ul {
+    
+   display: flex;
+   list-style: none;
+  
+}
+
+ul li {
+   
+    background-color: rgb(235, 77, 88);
+    padding: 0 3px;
+    margin: 0 22px;
+    font-size:17px ;
+   
+    border-radius: 5px;
+
+    font-family: 'Poppins';
+    color:white;
+   
+     
+}
+
+ul :hover{
+    background-color:rgb(116, 192, 192);
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+
+
+
+
+
+
+@media only screen and  (max-width : 800px)
+{
+    header {
+        flex-direction: column-reverse;
+    }
+    ul li {
+        margin : 0 3vw;
+        font-size: 13px;
+    }
+
+
+
+
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+/* Main___________________________________________ */
+
+main{
+    padding: 20px 0 ;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    height:auto;
+    width:100vw;
+    font-size: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 10px;
+}
+
+h1{
+    text-align: center;
+    font-size: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* container_______________________ */
+
+.container
+{
+    align-items: center;
+    overflow-x: auto;
+    white-space: nowrap;
+    text-align: center;
+
+
+}
+.box {
+    align-items: center;
+   
+    
+    display: inline-block;
+    height:300px ;
+    width :400px;
+    margin:9px;
+    background-color: black;
+    border-radius: 5%;
+}
+
+
+#project{
+    background-image: url("./media/icon/pro.png");
+}
+
+#youtube 
+{
+    background-image: url("./media/icon/you.png");
+}
+
+.coming{
+    background-image: url("./media/icon/coming.png") ;
+}
