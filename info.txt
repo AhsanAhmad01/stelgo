@@ -1,0 +1,2 @@
+logo background color - test red or rgb (255,0,0)
+logo - s , Verdana Pro Cond Black font with bold

@@ -6,79 +6,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="stylish.css" />
     <title>Stelgo</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Poppins:wght@300&family=Raleway:wght@600&family=Sofia+Sans+Semi+Condensed:ital,wght@0,100;1,200&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
+    <!-- 1.header__________________________________ -->
+    <!-- 1.header__________________________________ -->
     <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">home</a></li>
-          <li><a href="#work">work</a></li>
-          <li><a href="#services">services</a></li>
-          <li><a href="#about">about</a></li>
-          <li><a href="#contact">contact</a></li>
-        </ul>
-      </nav>
-      <div class="logo">
-        <img src="./media/yes.png" />
-        <h2>Stelgo</h2>
-      </div>
+      <ul>
+        <li>home</li>
+        <li>work</li>
+        <li>sevices</li>
+        <li>about</li>
+        <li>contact</li>
+      </ul>
+
+      <h1>Stelgo</h1>
+
+      <img
+        src="./media/icons/three_v.png"
+        id="menu"
+        alt="..."
+        onclick="side_bar()"
+      />
     </header>
 
-    <main>
+    <!-- 2.introduction____________________________-->
+    <!-- 2.introduction____________________________-->
+    <div id="introduction">
       <p>
-      A brand that provides services in web devlopment <br>
-      and various other digital solutions to fufill your digital needs.<br>
-      benefit from our expertise and exprience the <br>
-      uniqueness and supply-driven solutions through stelgo <br>
-      connect with our services and embark on a journey of digital growth with stelgo.
+        <b>Stelgo,</b> <br />
+        We provides sevices in web devlopment<br />
+        and various other solutions with experts to fulfill your needs.<br />
+        benifit from our expertise and exprience<br />
+        the uniqueness and supply-driven solution through <b>stelgo</b>
       </p>
-    </main>
-
-    <h1 id="work">work</h1>
-    <div class="container">
-      <div class="box" id="project"></div>
-      <div class="box" id="youtube"></div>
-      <div class="box coming" class="box"></div>
-    </div>
-
-    <h1 id="services">services</h1>
-    <div class="container">
-      <div class="box coming"></div>
-      <div class="box coming"></div>
-      <div class="box coming"></div>
-      <div class="box coming"></div>
-    </div>
-
-    <h1 id="about">about</h1>
-    <div class="container">
-      <div class="box coming"></div>
-      <div class="box coming"></div>
-    </div>
-    <!-- Contact_______________________________________________________________________ -->
-    <footer id = "contact">
-      <div class="social-icons">
-        <a href="mailto:youremail@example.com" target="_blank"><i class="fa fa-envelope"></i></a>
-        <a href="https://www.instagram.com/your_instagram" target="_blank"><i class="fa fa-instagram"></i></a>
-        <a href="https://www.twitter.com/your_twitter" target="_blank"><i class="fa fa-twitter"></i></a>
-        <a href="https://www.linkedin.com/in/your_linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
-        <a href="https://www.youtube.com/your_channel" target="_blank"><i class="fa fa-youtube"></i></a>
+      <br />
+      <div id="small">
+        connect with our services and <br />
+        embark on a journey of digital<br />
+        growth with stelgo <button>explore</button>
       </div>
-    </footer>
-      <p class="copyright">
-    &copy; 2023 stelgo. All rights reserved.
-    </p>
-   
+    </div>
+    <!-- 2.1 side_bar____________________________-->
+    <!-- 2.1 side_bar____________________________-->
+    <div id="side_bar">
+      <ul>
+        <li><img src="./media/icons/home.svg" alt="" /></li>
+
+        <li><img src="./media/icons/work.svg" alt="" /></li>
+
+        <li><img src="./media/icons/services.svg" alt="" /></li>
+
+        <li><img src="./media/icons/about.svg" alt="" /></li>
+
+        <li><img src="./media/icons/contact.svg" alt="" /></li>
+        <li></li>
+        <li>
+          <img
+            height="20px"
+            src="./media/icons/close.svg"
+            alt="X"
+            onclick="side_bar()"
+          />
+        </li>
+      </ul>
+    </div>
+
+    <!-- 3.Main____________________________________-->
+    <!-- 3.Main____________________________________-->
+    <main>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </main>
+    <!-- 4.footer__________________________________ -->
+    <!-- 4.footer__________________________________ -->
+
+    <!-- scripting -->
+    <script src="index.js"></script>
   </body>
 </html>
