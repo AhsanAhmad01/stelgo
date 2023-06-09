@@ -22,11 +22,11 @@
     <!-- 1.header__________________________________ -->
     <header>
       <ul>
-        <li>home</li>
-        <li>work</li>
-        <li>sevices</li>
-        <li>about</li>
-        <li>contact</li>
+        <a href="index.html"><li>home</li></a>
+          <a href="#work"><li>work</li></a>
+            <a href="#sevices"><li>sevices</li></a>
+              <a href="#about"><li>about</li></a>
+                <a href="#contact"><li>contact</li></a>
       </ul>
 
       <h1>Stelgo</h1>
@@ -53,30 +53,30 @@
       <div id="small">
         connect with our services and <br />
         embark on a journey of digital<br />
-        growth with stelgo <button>explore</button>
+        growth with stelgo <a href = "#services"><button >explore</button></a>
       </div>
     </div>
     <!-- 2.1 side_bar____________________________-->
     <!-- 2.1 side_bar____________________________-->
     <div id="side_bar">
       <ul>
-        <li><img src="./media/icons/home.svg" alt="" /></li>
+        <a href="index.html"><li><img src="./media/icons/home.svg" alt="H" /></li></a>
 
-        <li><img src="./media/icons/work.svg" alt="" /></li>
+        <a href="#work"> <li><img src="./media/icons/work.svg" alt="Q" /></li></a>
 
-        <li><img src="./media/icons/services.svg" alt="" /></li>
+        <a href="#services"> <li><img src="./media/icons/services.svg" alt="$" /></li></a>
 
-        <li><img src="./media/icons/about.svg" alt="" /></li>
+        <a href="#about"> <li><img src="./media/icons/about.svg" alt="@" /></li></a>
 
-        <li><img src="./media/icons/contact.svg" alt="" /></li>
+        <a href="#contact"></a><li><img src="./media/icons/contact.svg" alt="/" /></li></a>
         <li></li>
-        <li>
+        <a href=""> <li>
           <img
             height="20px"
             src="./media/icons/close.svg"
             alt="X"
             onclick="side_bar()"
-          />
+          /></a>
         </li>
       </ul>
     </div>
@@ -84,12 +84,63 @@
     <!-- 3.Main____________________________________-->
     <!-- 3.Main____________________________________-->
     <main>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
+      <h1 style="color: #00000086">work</h1>
+      <div class="container" id="work">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+      <h1 style="color: #2d4a5ab3">services</h1>
+
+      <div class="container" id="services">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
     </main>
-    <!-- 4.footer__________________________________ -->
-    <!-- 4.footer__________________________________ -->
+    
+    
+    <!-- 4.about__________________________________ -->
+    <!-- 4.about__________________________________ -->
+    <div id="about">
+      <div class="box">
+        <p>"we are the best ,<br>
+        because we provided best <br>
+         services."</p>
+      </div>
+      <div class="box">
+        <p>"we work for you <br>
+        and believe me you are <br>
+        in right place"</p>
+      </div>
+      
+    </div>
+
+    <!-- 5.contact__________________________ -->
+    <!-- 5.contact__________________________ -->
+    <div id = "contact">
+      <div class = "c">
+        <ul>
+          <li>email : mdahsanahmad@gmail.com</li>
+          <li>instagram : @ahsan_byte</li>
+          <li>twitter : stelgo@</li>
+        </ul>
+      </div>
+      <div class = "c">
+        <ul>
+          <li>youtube: stelgo offlicle</li>
+          <li>instagram : @ahsan_byte</li>
+          <li>twitter : stelgo@</li>
+        </ul>
+      </div>
+      <div class = "c">
+        <ul>
+          <li>email : mdahsanahmad@gmail.com</li>
+          <li>instagram : @ahsan_byte</li>
+          <li>twitter : stelgo@</li>
+        </ul>
+      </div>
+    </div>
 
     <!-- scripting -->
     <script src="index.js"></script>

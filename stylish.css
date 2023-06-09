@@ -7,6 +7,11 @@ body{
     background-color:rgb(255, 255, 255);
     
 }
+a
+{
+    text-decoration: none;
+    color: inherit;
+}
 
 
 /* 1.header___________________________________________ */
@@ -83,8 +88,10 @@ header img
     height:550px;
     width : 100%;
     font-family: 'Raleway';
-    background : linear-gradient(-60deg,#ee7752,#e73c7e,#23a6d5 ,#23d5ab);
-    background-size: 400% 300%;
+    background : linear-gradient(-60deg,#52eee1,#84f3c2,#23a6d5 ,#23d5ab);
+    background-size: 200% 200%;
+  animation:gradient 16s ease infinite;
+   
     
  
 }
@@ -103,10 +110,11 @@ header img
 #small
 {
     color: white;
-     font-size: 1rem;
+     font-size: 0.93rem;
      margin-left:10vw;
     padding-bottom: 8vh;
-    font-style: italic;
+  
+    font-weight:lighter;
 
 }
 #small button
@@ -114,15 +122,19 @@ header img
     font-weight: bold;
     color:rgba(56, 94, 104, 0.689);
     margin:5px ;
-    background-color: rgb(101, 163, 234);
+    background-color: rgb(182, 214, 250);
    border: none;
    border-radius: 3px;
    padding: 3px;
-   background : linear-gradient(-45deg , #ee7752,#e73c7e,#23a6d5 ,#23d5ab);
-   background-size: 200% 200%;
-   animation:gradient 8s ease infinite;
+   background : linear-gradient(-45deg ,#23a6d5 ,#ffffff ,rgb(97, 152, 190));
+   background-size: 250% 200%;
+   animation:gradient 5s ease infinite;
    border: black solid 1px;
 
+}
+#small button :hover
+{
+    color: white;
 }
 @keyframes gradient {
     0%{background-position:0% 50%;}
@@ -145,7 +157,7 @@ header img
     position:fixed;
     top:62px;
     right:1px;
-           background-color: rgba(255, 255, 255, 0.55);
+   background-color: rgba(255, 255, 255, 0.55);
 }
 #side_bar ul
 {
@@ -168,27 +180,119 @@ header img
 /* 3.main______________________________________ */
 /* 3.main______________________________________ */
 
-main
+main{
+
+    background-color: rgb(255, 255, 255);
+}
+main h1 
+{   background-color:inherit;
+    font-size: xx-large;
+    font-family: 'Poppins';
+    text-align: center;
+    padding : 10px 0 0 0  ;
+    font-style: oblique;
+}
+.container
 {
-    display: flex;
-    
-   height:300px;
+  
+  padding: 10px 0 ;
+   height:260px;
    width:100%;
-   background-color: black;
+   background-color:inherit;
+   overflow-x:auto;
+   white-space: nowrap;
+   align-items: center;
+   text-align: center;
 
 }
 .box{
-    display:flexbox;
-    background-color: #3ad4ff86;
-    margin:10px 2vw;
-    height:80%;
-    width:200px;
-   
+    display:inline-block;
+    background-color: #c368a486;
+  
+    height:240px;
+    width:330px;
+    border-radius: 3%;
+    margin : 0 4px;
+    border: black solid 1px;
+}
 
+#work .box 
+{
+    background-color: #62dfe8c3;
+
+}
+
+#services .box
+{
+    background-color: #82d3ffc3;
 
 }
 
 
-/* 4.footer______________________________________ */
-/* 4.footer______________________________________ */
+/* 4.about______________________________________ */
+/* 4.about______________________________________ */
+#about
+{
+    height : 300px;
+    width:100%;
+    background-color: #ffffffa5;
+    overflow-x: auto;
+    white-space: nowrap;
+    text-align: center;
+   
+}
 
+#about .box
+{
+    background-color: none;
+    text-align: center;
+    background-color: white;
+    border-radius: 0%;
+    border: none;
+    width:400px;
+}
+
+#about .box p 
+{
+    text-align: center;
+    margin : 20px;
+    font-size: 1.5rem;
+    font-family: cursive;
+    
+}
+
+/* contact______________________________________ */
+/* contact______________________________________ */
+#contact
+{
+    height : auto;
+    width : 100%;
+    background:rgba(0, 0, 0, 0.571);
+    
+ 
+  
+}
+
+.c
+{
+align-items: center;
+    display: inline-block;
+    background-color:inherit;
+    margin:20px;
+    width : 400px;
+    height:auto;
+    color:white;
+
+}
+.c ul 
+{
+    padding:5px;
+    list-style: none;
+}
+
+.c ul li
+{   
+    font-size: 0.8rem;
+    font-weight: lighter;
+    margin : 7px 0 ;
+}
