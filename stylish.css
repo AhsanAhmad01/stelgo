@@ -270,26 +270,31 @@ main h1
     height : auto;
     width : 100%;
     background:rgba(0, 0, 0, 0.571);
-    
- 
+   
+    text-align: center;
   
 }
 
 .c
 {
-align-items: center;
+
     display: inline-block;
     background-color:inherit;
-    margin:20px;
+    margin:15px;
     width : 300px;
     height:auto;
     color:white;
+    padding-left:5px;
+ 
+   
+   
 
 }
 .c ul 
 {
     padding:5px;
     list-style: none;
+    text-align: left;
 }
 
 .c ul li
@@ -297,4 +302,12 @@ align-items: center;
     font-size: 0.8rem;
     font-weight: lighter;
     margin : 5px 0 ;
+}
+
+/* over______________ */
+#over
+{
+    /* display:none; */
+    position: fixed;
+  
 }
